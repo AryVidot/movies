@@ -1,38 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-size: cover;
+  background-color: #000;
+  background-repeat: repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3%;
+  width: 100%;
+}
+
+.App .search input {
+  flex: 1;
+  padding: 15px;
+}
+
+.App .search button {
+  flex: 0;
+  margin-left: 1rem;
+  padding: 15px;
+}
+
+.App form input {
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+.App form button {
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+/* input {
+  margin: 1rem;
+  margin: 2rem;
+  width: 600px;
+  padding: 15px;
+}
+
+button {
+  padding: 15px;
+} */
+
+.element {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.element img {
+  max-width: 250px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.element-div {
+  height: 500px;
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+
+p {
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 10%;
 }
